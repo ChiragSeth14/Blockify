@@ -36,12 +36,9 @@ module royalty_manager::royalty_manager {
         distribute_royalties(track);
     }
 
-    public fun set_royalties(track: &mut MusicTrack, value: u64, ctx: &TxContext) {
-        assert!(track.owner == ctx.sender(), 0);
-        track.royalties = value;
-    }
-
-    public fun distribute_royalties(track: &MusicTrack) {
-        let artist_payment = (track.royalties * 80) / 100;
+    public entry fun distribute_royalties(track: &mut MusicTrack) {
+        let royalty_percentage = 80 * 1000;
+        let streaming_rate = 4 * 1000;
+        track.royalties = track.royalties + ((streaming_rate * royalty_percentage) / (100 * 1000));
     }
 }
