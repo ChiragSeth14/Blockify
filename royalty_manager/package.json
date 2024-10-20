@@ -1,0 +1,23 @@
+{
+  "name": "royalty_manager",
+  "version": "1.0.0",
+  "main": "spotify_auth.js",   
+  "type": "commonjs",          
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Spotify API and Sui Blockchain integration",
+  "dependencies": {
+    "@mysten/sui.js": "^0.54.1",    
+    "axios": "^1.7.7",              
+    "dotenv": "^16.4.5",            
+    "express": "^4.21.1",           
+    "querystring": "^0.2.1"         
+  }
+}

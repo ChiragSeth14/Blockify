@@ -1,0 +1,101 @@
+/* Overall App Styling */
+.App {
+  text-align: center;
+  background-color: #191414; /* Spotify's black background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif; /* Clean, modern font */
+  color: white; /* White text for high contrast */
+  padding: 20px;
+}
+
+h1 {
+  color: #1DB954; /* Spotify's signature green */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+form {
+  background-color: #282828; /* Darker background for form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  max-width: 100%;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: #b3b3b3; /* Lighter grey for labels */
+  margin-bottom: 8px;
+}
+
+/* Centering the input fields within the form and aligning text left */
+input {
+  width: 80%; /* Set a specific width for the input fields */
+  padding: 12px;
+  margin: 0 auto; /* Center the input fields horizontally */
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: left; /* Ensure text inside the input is aligned to the left */
+}
+
+input:focus {
+  outline: none;
+  background-color: #444; /* Lighter background on focus */
+}
+
+button {
+  width: 80%; /* Keep button width consistent with input fields */
+  padding: 15px;
+  background-color: #1DB954; /* Spotify green */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin: 0 auto; /* Center the button */
+}
+
+button:hover {
+  background-color: #1ed760; /* Slightly brighter green on hover */
+}
+
+button:active {
+  background-color: #148f43; /* Darker green on active */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+  input, button {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+/* Footer Styling (Optional, if you add one) */
+footer {
+  margin-top: auto;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
